@@ -10,7 +10,10 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --plugin-search-dir . --write .",
+		"build:major": "npm --no-git-tag-version version major && npm run package && cd package && npm publish",
+		"build:minor": "npm --no-git-tag-version version minor && npm run package && cd package && npm publish",
+		"build:patch": "npm --no-git-tag-version version patch && npm run package && cd package && npm publish"
 	},
 	"exports": {
 		".": {
@@ -44,6 +47,19 @@
 		"typescript": "^5.0.0",
 		"vite": "^4.4.2"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"contributors": [
+		"kewkartik <https://github.com/kewkartik>"
+	],
+	"bugs": "https://github.com/kewkartik/svelte-radix-icons/issues",
+	"homepage": "https://github.com/kewkartik/svelte-radix-icons",
+	"license": "MIT",
+	"repository": {
+		"url": "https://github.com/kewkartik/svelte-radix-icons"
+	},
+	"sideEffects": false,
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"type": "module"
