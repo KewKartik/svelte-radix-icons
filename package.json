@@ -16,7 +16,7 @@
 		"build:patch": "npm --no-git-tag-version version patch && npm run package && cd package && npm publish"
 	},
 	"peerDependencies": {
-		"svelte": "^4.0.0"
+		"svelte": "^3.0.0"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
