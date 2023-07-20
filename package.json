@@ -1,6 +1,6 @@
 {
 	"name": "svelte-radix-icons",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -15,7 +15,7 @@
 		"build:minor": "npm --no-git-tag-version version minor && npm run package && cd package && npm publish",
 		"build:patch": "npm --no-git-tag-version version patch && npm run package && cd package && npm publish"
 	},
-	"peerDependencies": {
+	"dependencies": {
 		"svelte": "^3.0.0"
 	},
 	"devDependencies": {
