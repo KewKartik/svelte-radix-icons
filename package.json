@@ -1,6 +1,7 @@
 {
-	"name": "svelte-radix-icons",
-	"version": "0.1.2",
+	"name": "svelte-icons-radix",
+	"version": "0.1.1",
+	"description": "Svelte Icons inspired by radix-icons",
 	"main": "src/lib/index.ts",
 	"scripts": {
 		"dev": "vite dev",
@@ -13,8 +14,8 @@
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
-	"dependencies": {
-		"svelte": "^3.0.0"
+	"peerDependencies": {
+		"svelte": "^3.43.1 || ^4.0.0"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
