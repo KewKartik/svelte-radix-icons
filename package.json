@@ -35,6 +35,10 @@
 		"typescript": "^5.0.0",
 		"vite": "^4.4.2"
 	},
+	"exports": {
+		"svelte": "./src/routes/page.svelte",
+		"default": "./src/lib/index.ts"
+    },
 	"publishConfig": {
 		"access": "public"
 	},
